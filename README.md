@@ -3,7 +3,7 @@
 # 目录
 - 安装
     - [go安装使用](doc/7.1.md)
-- 基本语法
+- 基本
     - [数组](base/array.go)
     - [切片](base/slice.go)
     - [break](base/break.go)
@@ -13,6 +13,7 @@
     - [字符串](base/str.go)
     - [函数](base/func.go)
     - [map](base/map.go)
-- 进阶
+- 高级
+    - [结构体](base/struct.go)
     - [通道](base/chan.go)
-    - [mysql允许远程连接](linux/3.2.md)
+    - [go runtine](base/runtine.go)
