@@ -61,6 +61,27 @@ func test4() {
 	}
 }
 
+func change(a []int) {
+	fmt.Printf("v=%v,p=%p\n", a, &a)
+	a = append(a, 3)
+	a[0] = 11
+	a[1] = 22
+	fmt.Printf("v=%v,p=%p\n", a, &a)
+	a = append(a, 4)
+	a[0] = 111
+	a[1] = 222
+	fmt.Printf("v=%v,p=%p\n", a, &a)
+}
+
+func test5() {
+	a1 := make([]int, 2, 3)
+	a1[0] = 1
+	a1[1] = 2
+	fmt.Printf("v=%v,p=%p\n", a1, &a1)
+	change(a1)
+	fmt.Printf("v=%v,p=%p\n", a1, &a1)
+}
+
 func main() {
-	test4()
+	test5()
 }
