@@ -1,0 +1,19 @@
+#hcrm监听ip端口
+net:
+  ip: ::
+  port: 9999
+
+#mysql配置
+db:
+  user: root
+  passwd: 123456
+  host: 192.168.5.41
+  port: 3306
+  #所用数据库
+  database: hcrm
+
+#ybind监听ip端口
+ybind:
+  ip: 127.0.0.1
+  port: 9999
+  conf: /etc/named.conf
