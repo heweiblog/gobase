@@ -17,6 +17,7 @@
     - [select](base/select.go)
     - [结构体](base/struct.go)
     - [通道](base/chan.go)
+    - [waitgroup](base/wg.go)
     - [go runtine](base/runtine.go)
 - 扩展
     - [viper](viper/c2.go)

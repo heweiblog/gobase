@@ -110,8 +110,14 @@ func test3() {
 	fmt.Println("len=", len(slice))
 }
 
+func test4() {
+	cpuNum := runtime.NumCPU() //获得当前设备的cpu核心数
+	fmt.Println("cpu核心数:", cpuNum)
+	runtime.GOMAXPROCS(cpuNum) //设置需要用到的cpu数量
+}
+
 func main() {
 	//test1()
 	//test2()
-	test3()
+	test4()
 }
