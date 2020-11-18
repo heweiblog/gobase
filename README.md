@@ -12,7 +12,8 @@
     - [链表](base/list.go)
     - [字符串](base/str.go)
     - [函数](base/func.go)
-    - [map](base/map.go)
+    - [map基本使用](base/map.go)
+    - [map转json](base/map_to_json.go)
     - [递归](base/recursion.go)
 - 高级
     - [select](base/select.go)
