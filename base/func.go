@@ -17,6 +17,7 @@ func test1() (x int, y int, s string) {
 
 type Func func() (int, int, string)
 
+//test
 func test2() {
 	//x, y, s := test()
 	//x, y, s := test1()
