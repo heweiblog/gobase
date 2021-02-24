@@ -22,6 +22,8 @@
     - [通道](base/chan.go)
     - [waitgroup](base/wg.go)
     - [go runtine](base/runtine.go)
-    - [gojson文件读写](base/json.go)
+    - [json文件读写](base/json.go)
+    - [gob msgpack替代json库更高效](base/msgpack.go)
 - 扩展
     - [viper](viper/c2.go)
+    - [jwt](gin_demo/gin_jwt.go)
