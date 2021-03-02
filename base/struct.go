@@ -6,6 +6,29 @@ import (
 	"log"
 )
 
+//Person 结构体
+type Person struct {
+	name string
+	age  int8
+}
+
+//NewPerson 构造函数
+func NewPerson(name string, age int8) *Person {
+	return &Person{
+		name: name,
+		age:  age,
+	}
+}
+
+//Dream Person做梦的方法
+func (p Person) Dream() {
+	fmt.Printf("%s的梦想是学好Go语言！\n", p.name)
+}
+
+func (p *Person) PDream() {
+	fmt.Printf("%s的梦想是成为技术大牛！\n", p.name)
+}
+
 //以小写字母开头的结构体将不会被（json、xml、gob等）编码，因此当你编码这些未导出的结构体时，你将会得到零值。
 type People struct {
 	Name string
@@ -18,6 +41,13 @@ type Stu struct {
 }
 
 func main() {
+	p1 := NewPerson("小王子", 25)
+	p2 := Person{name: "hww", age: 18}
+	p1.Dream()
+	p2.Dream()
+	p1.PDream()
+	p2.PDream()
+
 	//var a People
 	//a.Name = "贺伟伟"
 	//a.Age = 18

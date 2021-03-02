@@ -16,6 +16,7 @@
     - [map转json](base/map_to_json.go)
     - [递归](base/recursion.go)
     - [文本文件读写](base/txt_file.go)
+    - [时间](base/time.go)
 - 高级
     - [select](base/select.go)
     - [结构体](base/struct.go)
